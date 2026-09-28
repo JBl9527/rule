@@ -4,7 +4,7 @@
     {
       "tag": "JC1",
       "type": "remote",
-      "url": "此处填入订阅链接",
+      "url": "机场链接",
       "health_check": {"enabled":true,"url":"https://www.gstatic.com/generate_204","interval":"10m","timeout":"3s"},
       "exclude": "官网|剩余|流量|套餐|免费|订阅|全球直连|到期时间|GB|Expire Date|Traffic|ExpireDate",
       "http_client": "直连下载",
@@ -116,13 +116,7 @@
     "auto_detect_interface": true,
     "default_domain_resolver": {"server": "ali"}
   },
- "inbounds": [
-    {
-      "tag": "dns-in",
-      "type": "direct",
-      "listen": "0.0.0.0",
-      "listen_port": 5353
-    },
+  "inbounds": [
     {
       "tag": "tun-in",
       "type": "tun",
@@ -133,13 +127,6 @@
       "auto_route": true,
       "auto_redirect": true
     },
-    {
-      "tag": "mixed-in",
-      "type": "mixed",
-      "listen": "0.0.0.0",
-      "listen_port": 7890
-    }
-  ],
     {
       "tag": "mixed-in",
       "type": "mixed",
